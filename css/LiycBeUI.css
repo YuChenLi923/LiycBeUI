@@ -1,0 +1,36 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+
+.lb-nav{
+	float:left;
+}
+
+.lb-nav-item{
+	display:block;
+	overflow:hidden;
+}
+.lb-nav-title{
+	display:block;
+	overflow:hidden;
+	position:relative;
+}
+.lb-nav-title .logo{
+	height:100%;
+	float:left;
+	width:20px;
+}
+.lb-nav-title .text,.text1{
+	cursor:default;
+	float:left;
+}
+.lb-nav-citem{
+	list-style:none;
+	display:none;
+	margin-left:30px;
+}
+.lb-nav-item li{
+	display:block;
+}

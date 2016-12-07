@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台UI组件(基于vue.js)</title>
+		<link rel="stylesheet" type="text/css" href="css/LiycBeUI.css"/>
+		
+	</head>
+	<body>
+		<div id="app">
+			<lb-nav :items="items"></lb-nav>
+		</div>
+		<script type="text/javascript"  src="js/vue.min.js"></script>
+		<script type="text/javascript" src="js/LiycBeUI.min.js"></script>
+		<script type="text/javascript">
+			var demo=new Vue({
+						el:"#app",
+						data:{
+							items:[
+								{
+									title:'目录A',
+									citems:[
+										{	title:'A1',
+											citems:['A1-1','A1-2','A1-3'],
+											flag:true
+										},
+										{	title:'A2',
+											citems:['A2-1','A2-2','A2-3'],
+											flag:true
+										},
+										{	title:'A3',
+											citems:[
+												{	
+													title:'A3-1',
+													citems:['A3-1-1','A3-2-1','A3-3-1'],
+													flag:true
+												}
+											],
+											flag:true
+										}
+									],
+									flag:true
+								},
+								{
+									title:'目录B',
+									citems:['B1','B2','B3'],
+									flag:true
+								},
+								{
+									title:'目录C',
+									citems:['C1','C2'],
+									flag:true
+								}
+							]
+						},
+						 components: {
+					    	'lb-nav':LiycBeUI_Catalog
+					  	}
+					});
+		</script>
+	</body>
+</html>
